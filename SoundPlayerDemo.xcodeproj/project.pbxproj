@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9C07658A1A86D6030023D987 /* Build Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9C07658B1A86D6030023D987 /* Build configuration list for PBXAggregateTarget "Build Framework" */;
+			buildPhases = (
+				9C07658E1A86D62F0023D987 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Framework";
+			productName = "Build Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		881C49551834CB9900FED604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881C49541834CB9900FED604 /* Foundation.framework */; };
 		881C49571834CB9900FED604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881C49561834CB9900FED604 /* CoreGraphics.framework */; };
@@ -28,6 +42,8 @@
 		88B1895719E9D6C2004230F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B1895619E9D6C2004230F2 /* XCTest.framework */; };
 		88EEDE7D1842FB5C00A12E01 /* Funk.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 88EEDE7C1842FB5C00A12E01 /* Funk.aiff */; };
 		88FA61A318518FCB00BB4358 /* BalladPiano.caf in Resources */ = {isa = PBXBuildFile; fileRef = 88FA61A218518FCB00BB4358 /* BalladPiano.caf */; };
+		9C0765881A86D5B10023D987 /* JSQSystemSoundPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 88484DE6183F350C00242F9E /* JSQSystemSoundPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C0765891A86D5B60023D987 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88484DE7183F350C00242F9E /* JSQSystemSoundPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +81,7 @@
 		88B1895619E9D6C2004230F2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
 		88EEDE7C1842FB5C00A12E01 /* Funk.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Funk.aiff; sourceTree = "<group>"; };
 		88FA61A218518FCB00BB4358 /* BalladPiano.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BalladPiano.caf; sourceTree = "<group>"; };
+		9C0765751A86D1270023D987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +103,13 @@
 				88B1895719E9D6C2004230F2 /* XCTest.framework in Frameworks */,
 				881C49761834CB9A00FED604 /* UIKit.framework in Frameworks */,
 				881C49751834CB9A00FED604 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C07657D1A86D3670023D987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				88484DE5183F350C00242F9E /* Classes */,
+				9C0765741A86D1270023D987 /* Supporting Files */,
 			);
 			path = JSQSystemSoundPlayer;
 			sourceTree = SOURCE_ROOT;
@@ -194,7 +219,26 @@
 			name = "Sample sounds";
 			sourceTree = "<group>";
 		};
+		9C0765741A86D1270023D987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C0765751A86D1270023D987 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C0765871A86D5A90023D987 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0765881A86D5B10023D987 /* JSQSystemSoundPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		881C49501834CB9900FED604 /* SoundPlayerDemo */ = {
@@ -232,6 +276,23 @@
 			productReference = 881C49721834CB9A00FED604 /* SoundPlayerDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9C07657F1A86D3670023D987 /* JSQSystemSoundPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C0765841A86D3670023D987 /* Build configuration list for PBXNativeTarget "JSQSystemSoundPlayer" */;
+			buildPhases = (
+				9C07657C1A86D3670023D987 /* Sources */,
+				9C07657D1A86D3670023D987 /* Frameworks */,
+				9C0765871A86D5A90023D987 /* Headers */,
+				9C07657E1A86D3670023D987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSQSystemSoundPlayer;
+			productName = JSQSystemSoundPlayer;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +306,12 @@
 					881C49711834CB9A00FED604 = {
 						DevelopmentTeam = 5VRJU68BZ5;
 						TestTargetID = 881C49501834CB9900FED604;
+					};
+					9C07657F1A86D3670023D987 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9C07658A1A86D6030023D987 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -263,6 +330,8 @@
 			targets = (
 				881C49501834CB9900FED604 /* SoundPlayerDemo */,
 				881C49711834CB9A00FED604 /* SoundPlayerDemoTests */,
+				9C07657F1A86D3670023D987 /* JSQSystemSoundPlayer */,
+				9C07658A1A86D6030023D987 /* Build Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -290,7 +359,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C07657E1A86D3670023D987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C07658E1A86D62F0023D987 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=\"JSQSystemSoundPlayer\"\nFMK_VERSION=\"A\"\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		881C494D1834CB9900FED604 /* Sources */ = {
@@ -310,6 +402,14 @@
 			files = (
 				88484DE9183F350C00242F9E /* JSQSystemSoundPlayer.m in Sources */,
 				881C49801834CB9B00FED604 /* JSQSystemSoundPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C07657C1A86D3670023D987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0765891A86D5B60023D987 /* JSQSystemSoundPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +605,67 @@
 			};
 			name = Release;
 		};
+		9C0765851A86D3670023D987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JSQSystemSoundPlayer/Info.plist;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		9C0765861A86D3670023D987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JSQSystemSoundPlayer/Info.plist;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		9C07658C1A86D6030023D987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C07658D1A86D6030023D987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +695,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9C0765841A86D3670023D987 /* Build configuration list for PBXNativeTarget "JSQSystemSoundPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0765851A86D3670023D987 /* Debug */,
+				9C0765861A86D3670023D987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C07658B1A86D6030023D987 /* Build configuration list for PBXAggregateTarget "Build Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C07658C1A86D6030023D987 /* Debug */,
+				9C07658D1A86D6030023D987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
